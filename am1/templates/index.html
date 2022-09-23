@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Templating</title>
+</head>
+<body>
+    <h3>Name = {{ name|truncatechars:4 }}</h3>
+    {% if name == "my name is akash" %}
+    <h1>Name  =  {{ name }}</h1>
+    {% endif %}
+    <ul>
+    {% for na in name reversed %}
+        <li>{{na}}</li>
+    {% endfor %}        
+    </ul>
+</body>
+</html>
