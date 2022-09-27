@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="" method="get">
+    {{form}}
+    <input type="button" value="Submit">
+    </form>
+    <hr>
+    <br>
+    {{form.as_table}}
+    <input type="button" value="Submit">
+    <hr>
+    <br>
+    {{form.as_ul}}
+    <input type="button" value="Submit">
+    <hr>
+    <br>
+    {{form.name}}
+    {{form.email}}
+    <input type="button" value="Submit">
+    <hr>
+    <br>
+    {{form.as_p}}
+    <input type="button" value="Submit">
+    <div>
+        <label for="{{form.name.id_for_label}}">Name:</label>
+        <input type="text" name="name" id="required_id">
+        <label for="{{form.html_name}}">Name:</label>
+    </div>
+</body>
+</html>
